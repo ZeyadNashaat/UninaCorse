@@ -1,0 +1,37 @@
+These are the answers for exercise 1:
+
+1. There are 5 topics in the bag:
+
+	command: ros2 bag info ~/ros2_ws/src/rosbag2_2024_11_22-00_32_31/
+	
+	a. Topic: /imu/acceleration
+	b. Topic: /imu/angular_velocity
+	c. Topic: /imu/data
+	d. Topic: /zed2i/zed_node/left_gray/image_rect_gray
+	e. Topic: /system_info
+
+2. The Hz of topic image:
+
+	command: ros2 topic hz /zed2i/zed_node/left_gray/image_rect_gray
+	
+	average rate: 28.601
+	min: 0.000s max: 0.424s std dev: 0.02879s window: 243
+	
+3. The Hz of topic system:
+	
+	command: ros2 topic hz /system_info
+	
+	average rate: 2.299
+	min: 0.241s max: 0.507s std dev: 0.11220s window: 4
+
+4. The topic system return:
+
+	command: ros2 topic echo /system_info
+	
+	cpu_usage: 15.4
+	cpu_temp: 56.75
+	ram_usage: 9.7
+	gpu_usage: 59.6
+	gpu_temp: 51.62
+	gpuram_usage: 1181.0
+
